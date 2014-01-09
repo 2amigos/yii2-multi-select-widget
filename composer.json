@@ -1,0 +1,17 @@
+{
+    "name": "2amigos/yii2-multiselect-widget",
+    "description": "Multiselect Bootstrap widget for Yii2.",
+    "keywords": ["widget", "yii"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Antonio Ramirez",
+            "email": "ramirez.cobos@gmail.com",
+            "homepage": "http://2amigos.us"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "dosamigos\\yii2\\widgets\\": "src/" }
+    }
+}
