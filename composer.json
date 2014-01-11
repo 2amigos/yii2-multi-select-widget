@@ -1,7 +1,7 @@
 {
     "name": "2amigos/yii2-multi-select-widget",
     "description": "Multiselect Bootstrap widget for Yii2.",
-    "keywords": ["widget", "yii", "multiselect", "dropdown", "bootstrap"],
+    "keywords": ["widget", "yii", "multiselect", "dropdown", "bootstrap", "plugin"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
