@@ -12,6 +12,6 @@
         }
     ],
     "autoload": {
-        "psr-0": { "dosamigos\\yii2\\widgets\\": "src/" }
+        "psr-4": { "dosamigos\\": "src/" }
     }
 }

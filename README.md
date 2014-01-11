@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require 2amigos/yyii2-multiselect-widget "1.0.*"
+php composer.phar require 2amigos/yii2-multiselect-widget "1.0.*"
 ```
 or add
 
