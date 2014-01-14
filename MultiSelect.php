@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace common\extensions\dosamigos\yii2\widgets;
+namespace dosamigos\widgets;
 
 use yii\helpers\Html;
 use yii\helpers\Json;

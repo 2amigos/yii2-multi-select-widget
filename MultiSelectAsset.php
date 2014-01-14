@@ -4,7 +4,7 @@
  * @link http://2amigos.us
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
-namespace common\extensions\dosamigos\yii2\widgets;
+namespace dosamigos\widgets;
 
 use yii\web\AssetBundle;
 
@@ -24,7 +24,7 @@ class MultiSelectAsset extends AssetBundle
 
 	public function init()
 	{
-		$this->sourcePath = dirname(__FILE__) . '/assets';
+		$this->sourcePath = __DIR__ . '/assets';
 		parent::init();
 	}
 }
