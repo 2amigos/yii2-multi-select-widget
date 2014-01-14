@@ -10,6 +10,8 @@ use yii\web\AssetBundle;
 
 class MultiSelectAsset extends AssetBundle
 {
+	public $sourcePath = '@vendor/2amigos/yii2-multi-select-widget/assets';
+
 	public $js = [
 		'js/bootstrap-multiselect.js'
 	];
@@ -21,10 +23,4 @@ class MultiSelectAsset extends AssetBundle
 	public $depends = [
 		'yii\bootstrap\BootstrapPluginAsset'
 	];
-
-	public function init()
-	{
-		$this->sourcePath = __DIR__ . '/assets';
-		parent::init();
-	}
 }
