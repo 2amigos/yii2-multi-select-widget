@@ -25,7 +25,7 @@ Usage
 Using a model:
 
 ```
-use dosamigos\widgets\MultiSelect;
+use dosamigos\multiselect\MultiSelect;
 
 <?=MultiSelect::widget([
     'data' => ['super', 'natural'],
