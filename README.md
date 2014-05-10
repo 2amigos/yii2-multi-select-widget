@@ -27,10 +27,10 @@ Using a model:
 ```
 use dosamigos\multiselect\MultiSelect;
 
-<?=MultiSelect::widget([
+<?= MultiSelect::widget([
     'data' => ['super', 'natural'],
     'name' => 'Test'
-]);?>
+]) ?>
 ```
 
 > [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)   
