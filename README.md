@@ -33,6 +33,24 @@ use dosamigos\multiselect\MultiSelect;
 ]) ?>
 ```
 
+Multiselect Option: 
+
+```
+echo MultiSelect::widget([
+    'id'=>"multiXX",
+    "options" => ['multiple'=>"multiple"], // for the actual multiselect
+    'data' => [ 0 => 'super', 2 => 'natural'], // data as array
+    'value' => [ 0, 2], // if preselected
+    'name' => 'multti', // name for the form
+    "clientOptions" => 
+        [
+            "includeSelectAllOption" => true,
+            'numberDisplayed' => 2
+        ], 
+]);
+```
+
+Note: You can make use of `'model'` and `'attribute'` for its configuration too instead of `'name'` and `'value'`.
 > [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)   
 <i>Web development has never been so fun!</i>
 [www.2amigos.us](http://www.2amigos.us)
