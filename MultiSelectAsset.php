@@ -10,7 +10,7 @@ use yii\web\AssetBundle;
 
 class MultiSelectAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/2amigos/yii2-multi-select-widget/assets';
+	public $sourcePath = '@bower/bootstrap-multiselect/dist';
 
 	public $js = [
 		'js/bootstrap-multiselect.js'
