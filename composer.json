@@ -20,5 +20,13 @@
         "psr-4": {
             "dosamigos\\multiselect\\": ""
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        }
     }
 }
