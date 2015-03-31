@@ -10,14 +10,14 @@ use yii\web\AssetBundle;
 
 class MultiSelectListBoxAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/2amigos/yii2-multi-select-widget/assets';
+	public $sourcePath = '@bower/multiselect';
 
 	public $js = [
-		'js/jquery-multiselect.js'
+		'js/jquery.multi-select.js'
 	];
 
 	public $css = [
-		'css/jquery-multiselect.css'
+		'css/multi-select.css'
 	];
 
 	public $depends = [
