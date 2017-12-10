@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 
 class MultiSelectAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/bootstrap-multiselect/dist';
+    public $sourcePath = '@npm/bootstrap-multiselect/dist';
 
     public $js = [
         'js/bootstrap-multiselect.js'
