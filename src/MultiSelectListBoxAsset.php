@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 
 class MultiSelectListBoxAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/multiselect';
+    public $sourcePath = '@npm/multiselect';
 
     public $js = [
         'js/jquery.multi-select.js'
