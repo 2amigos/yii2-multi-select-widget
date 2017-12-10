@@ -24,6 +24,8 @@ to the require section of your application's `composer.json` file.
 Usage for MultiSelect Bootstrap Plugin
 --------------------------------------
 
+![Bootstrap multiselect plugin](bootstrap-multiselect.png)
+
 **Using a model**
  
 ```
@@ -53,6 +55,8 @@ echo MultiSelect::widget([
 
 Usage for MultiSelectListBox Bootstrap Plugin
 ---------------------------------------------
+
+![Bootstrap multiselect plugin](multiselect.png)
 
 The functionality to use this plugin is actually the same as its an extension of the previous one. The only thing that 
 changes its use is its set of configuration options. 
