@@ -1,7 +1,9 @@
 MultiSelect Widget for Yii2
 ==============================
 
-Renders a [MultiSelect Bootstrap plugin](http://davidstutz.github.io/bootstrap-multiselect) widget.
+This library contains two of the most useful bootstrap multi-select plugins. One is the  
+[MultiSelect Bootstrap plugin](http://davidstutz.github.io/bootstrap-multiselect) from David Stutz and the other is 
+the [MultiSelect.js plugin](http://loudev.com/) from Loudev.
 
 Installation
 ------------
@@ -20,20 +22,20 @@ or add
 
 to the require section of your application's `composer.json` file.
 
-Usage
------
-Using a model:
+Usage for MultiSelect Bootstrap Plugin
+--------------------------------------
 
+**Using a model**
+ 
 ```
 use dosamigos\multiselect\MultiSelect;
 
-<?= MultiSelect::widget([
+<?= $form->field($model, 'attribute')->widget(MultiSelect::className(),[
     'data' => ['super', 'natural'],
-    'name' => 'Test'
 ]) ?>
 ```
 
-Multiselect Option: 
+**Using it as standalone widget**
 
 ```
 echo MultiSelect::widget([
@@ -50,7 +52,61 @@ echo MultiSelect::widget([
 ]);
 ```
 
-Note: You can make use of `'model'` and `'attribute'` for its configuration too instead of `'name'` and `'value'`.
+Usage for MultiSelectListBox Bootstrap Plugin
+---------------------------------------------
+
+The functionality to use this plugin is actually the same as its an extension of the previous one. The only thing that 
+changes its use is its set of configuration options. 
+
+```
+use dosamigos\multiselect\MultiSelectListBox;
+use yii\web\JsExpression;
+
+<?= $form->field($model, 'attribute')->widget(MultiSelect::className(),[
+    'data' => ['super', 'natural'],,
+    'clientOptions' => [
+        'selectableHeader' => "<input type='text' class='search-input' autocomplete='off' placeholder='try \"12\"'>",
+        // yep, events MUST use JsExpression
+        'afterInit' => new JsExpression('function(ms){ // ... }')
+    ]
+]) ?>
+```
+
+Further Information
+-------------------
+
+I highly recommend you to visit both sites: 
+
+- [MultiSelect Bootstrap plugin](http://davidstutz.github.io/bootstrap-multiselect)
+- [MultiSelect.js plugin](http://loudev.com/)
+
+
+Then, check what are the options that would allow you to create one or the other. I have never used both on the same 
+UI and I am not sure whether they can be used together or not. The `MultiSelectListBox` has a different constructor 
+function name but very similar (`multiSelect` vs `multiselect`), but we are not sure whether they are compatible or not.  
+
+If you have the experience and willing to share, let us know on the issues and we will update this README file 
+accordingly.
+
+
+Contributing
+------------
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+Credits
+-------
+
+- [Antonio Ramirez](https://github.com/tonydspaniard)
+- [All Contributors](../../contributors)
+
+
+License
+-------
+
+The BSD License (BSD). Please see [License File](LICENSE.md) for more information.
+
+
 > [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)   
 <i>Web development has never been so fun!</i>
 [www.2amigos.us](http://www.2amigos.us)

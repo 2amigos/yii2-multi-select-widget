@@ -3,30 +3,45 @@
     "description": "Multiselect Bootstrap widget for Yii2.",
     "keywords": ["yii", "extension", "widget", "multiselect"],
     "type": "yii2-extension",
+    "homepage": "https://github.com/2amigos/yii2-multi-select-widget",
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Antonio Ramirez",
-            "email": "ramirez.cobos@gmail.com",
-            "homepage": "http://2amigos.us"
+            "name": "2amigOS! Consulting Group",
+            "email": "hola@2amigos.us",
+            "homepage": "http://2amigos.us",
+            "role": "Developer"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
         "bower-asset/bootstrap-multiselect": "0.9.*",
         "bower-asset/multiselect": "0.9.*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "squizlabs/php_codesniffer": "*",
+        "phpmd/phpmd": "@stable"
+    },
     "autoload": {
         "psr-4": {
-            "dosamigos\\multiselect\\": ""
+            "dosamigos\\multiselect\\": "src"
         }
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
-        },
-        "asset-installer-paths": {
-            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "config": {
+        "fxp-asset": {
+            "installer-paths": {
+                "bower-asset-library": "vendor/bower"
+            }
         }
     }
 }
