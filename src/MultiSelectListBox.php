@@ -1,11 +1,15 @@
 <?php
-/**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+
+/*
+ * This file is part of the 2amigos/yii2-multiselect-widget project.
+ * (c) 2amigOS! <http://2amigos.us/>
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
  */
+
 namespace dosamigos\multiselect;
 
+use yii\base\InvalidParamException;
 use yii\helpers\Json;
 
 /**
@@ -21,6 +25,7 @@ class MultiSelectListBox extends MultiSelect
 {
     /**
      * Registers MultiSelect JQuery plugin and the related events
+     * @throws InvalidParamException
      */
     protected function registerPlugin()
     {
@@ -37,4 +42,4 @@ class MultiSelectListBox extends MultiSelect
         $js = "jQuery('#$id').multiSelect($options);";
         $view->registerJs($js);
     }
-} 
+}
