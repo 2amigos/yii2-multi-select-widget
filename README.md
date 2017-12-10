@@ -1,5 +1,10 @@
 MultiSelect Widget for Yii2
-==============================
+===========================
+[![Latest Stable Version](https://poser.pugx.org/2amigos/yii2-multi-select-widget/version)](https://packagist.org/packages/2amigos/yii2-multi-select-widget)
+[![Total Downloads](https://poser.pugx.org/2amigos/yii2-multi-select-widget/downloads)](https://packagist.org/packages/2amigos/yii2-multi-select-widget)
+[![Build Status](https://travis-ci.org/2amigos/yii2-multi-select-widget.svg?branch=master)](https://travis-ci.org/2amigos/yii2-multi-select-widget)
+[![Latest Unstable Version](https://poser.pugx.org/2amigos/yii2-multi-select-widget/v/unstable)](//packagist.org/packages/2amigos/yii2-multi-select-widget)  
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/2amigos/yii2-multi-select-widget/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/2amigos/multi-select-widget/?branch=master)
 
 This library contains two of the most useful bootstrap multi-select plugins. One is the  [MultiSelect Bootstrap plugin](http://davidstutz.github.io/bootstrap-multiselect) from David Stutz and the other is 
 the [MultiSelect.js plugin](http://loudev.com/) from Loudev.
