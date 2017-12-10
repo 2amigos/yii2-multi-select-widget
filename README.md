@@ -1,8 +1,7 @@
 MultiSelect Widget for Yii2
 ==============================
 
-This library contains two of the most useful bootstrap multi-select plugins. One is the  
-[MultiSelect Bootstrap plugin](http://davidstutz.github.io/bootstrap-multiselect) from David Stutz and the other is 
+This library contains two of the most useful bootstrap multi-select plugins. One is the  [MultiSelect Bootstrap plugin](http://davidstutz.github.io/bootstrap-multiselect) from David Stutz and the other is 
 the [MultiSelect.js plugin](http://loudev.com/) from Loudev.
 
 Installation
