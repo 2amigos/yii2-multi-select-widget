@@ -71,7 +71,7 @@ use dosamigos\multiselect\MultiSelectListBox;
 use yii\web\JsExpression;
 
 <?= $form->field($model, 'attribute')->widget(MultiSelect::className(),[
-    'data' => ['super', 'natural'],,
+    'data' => ['super', 'natural'],
     'clientOptions' => [
         'selectableHeader' => "<input type='text' class='search-input' autocomplete='off' placeholder='try \"12\"'>",
         // yep, events MUST use JsExpression
