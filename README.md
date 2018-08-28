@@ -70,7 +70,7 @@ changes its use is its set of configuration options.
 use dosamigos\multiselect\MultiSelectListBox;
 use yii\web\JsExpression;
 
-<?= $form->field($model, 'attribute')->widget(MultiSelect::className(),[
+<?= $form->field($model, 'attribute')->widget(MultiSelectListBox::className(),[
     'data' => ['super', 'natural'],
     'clientOptions' => [
         'selectableHeader' => "<input type='text' class='search-input' autocomplete='off' placeholder='try \"12\"'>",
