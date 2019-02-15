@@ -27,6 +27,8 @@ class MultiSelectListBox extends MultiSelect
      * Registers MultiSelect JQuery plugin and the related events
      * @throws InvalidParamException
      */
+    public $options=['multiple'=>'multiple'];
+    
     protected function registerPlugin()
     {
         $view = $this->getView();
