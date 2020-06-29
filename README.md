@@ -45,16 +45,17 @@ use dosamigos\multiselect\MultiSelect;
 
 ```
 echo MultiSelect::widget([
-    'id'=>"multiXX",
-    "options" => ['multiple'=>"multiple"], // for the actual multiselect
-    'data' => [ 0 => 'super', 2 => 'natural'], // data as array
-    'value' => [ 0, 2], // if preselected
+    'id'=> 'multiXX',
+    'options' => [
+		'multiple' => 'multiple' // for the actual multiselect
+		'value' => [0,2] // if preselected
+	],
+    'data' => [0 => 'super', 2 => 'natural'], // data as array
     'name' => 'multti', // name for the form
-    "clientOptions" => 
-        [
-            "includeSelectAllOption" => true,
-            'numberDisplayed' => 2
-        ], 
+    'clientOptions' => [
+		'includeSelectAllOption' => true,
+		'numberDisplayed' => 2
+	], 
 ]);
 ```
 
