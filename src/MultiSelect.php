@@ -39,18 +39,6 @@ class MultiSelect extends InputWidget
     public $clientOptions = [];
 
     /**
-     * Initializes the widget.
-     * @throws InvalidConfigException
-     */
-    public function init()
-    {
-        if (empty($this->data)) {
-            throw new  InvalidConfigException('"Multiselect::$data" attribute cannot be blank or an empty array.');
-        }
-        parent::init();
-    }
-
-    /**
      * @inheritdoc
      * @throws InvalidParamException
      */
